@@ -1,0 +1,125 @@
+:root{
+    --primary-color:#727272;
+    --font-size:1.10rem;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    margin: 70px;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #faf9f9;
+    padding: 30px 0px;
+   
+   
+
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    
+}
+nav > ul li{
+    padding-right:55px;
+    color: var(--primary-color);
+    font-size: var(--font-size);
+}
+/* banner section starts */
+.banner{
+    /* margin-top: 50px; */
+    align-items: center;
+    display: flex;
+    
+}
+.banner-content{
+    margin-top: 50px;
+    /* margin-right: 120px; */
+    width: 50%;
+}
+.main-title{
+    font-size: 2.50rem;
+
+}
+.banner-description{
+    font-size: var(--font-size);
+    color: var(--primary-color);
+    padding: 20px 0px;
+    width: 90%;
+}
+.btn-primary{
+    color: white;
+    background-color: rgb(222, 48, 18);
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+
+.banner-img img{
+    width: 100%;
+    /* padding-right: 140px; */
+    margin-right: 110px;
+    
+}
+  /* main section starts */
+  /* sponsor section starts */
+  .sponsors{
+    margin: 80px;
+  }
+  .sponsor-items{
+    display: flex;
+    border: 1px solid #727272;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* collection section starts */
+  .collection{
+    padding-bottom: 70px ;
+  }
+  .collection-title{
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .collection-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    /* border: 1px solid red; */
+   width: 80%;
+   height: 60%;
+   margin: auto;
+   justify-content: center;
+   margin-top: 20px;
+   
+  }
+  .collection-items .see-more{
+    /* position: relative;
+    right: 0px;
+    bottom: 0px; */
+  }
+  .card{
+    width: 90%;
+   
+    border: 1px solid #727272;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 5px 5px 10px ;
+  }
+  .card img{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+  }
+  .card .amount{
+    padding: 8px 0px;
+  }
+  .see-more{
+
+  }
