@@ -39,12 +39,22 @@ nav > ul li img{
 .banner{
     align-items: center;
     display: flex;
-    margin: 20px 70px;
-    
-    
+    margin: 40px 50px;  
+}
+.banner-img{
+  width: 40%;
+  text-align: center;
+  background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: contain;
+}
+.banner-img img{
+  width: 90%;
 }
 .banner-content{
     margin-top: 50px;
+    padding-left: 20px;
     width: 50%;
 }
 .banner-title{
@@ -78,7 +88,7 @@ nav > ul li img{
   /* main section starts */
   /* sponsor section starts */
 .sponsors{
-    margin: 80px;
+    margin: 60px;
 }
 .sponsor-items{
     display: flex;
@@ -92,40 +102,43 @@ nav > ul li img{
 
   /* collection section starts */
 .collection{
-    padding-bottom: 70px ;
+    /* padding-bottom: 70px ; */
+    padding: 30px 110px;
 }
 .collection-title{
-    font-size: 2rem;
-    text-align: center;
+  font-size: 2rem;
+  text-align: center;
 }
 .collection-items{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
-   
-   width: 80%;
-   height: 60%;
-   margin: auto;
-   justify-content: center;
-   margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
    
 }
 .card{
-    width: 90%;
    
     border: 1px solid #727272;
     margin: auto;
     padding: 15px;
     box-shadow: 5px 5px 10px ;
+    gap: 10px;
+}
+.btn-see{
+  text-align: right;
 }
 .card img{
     width: 100%;
     height: 20%;
     text-align: center;
 }
-  .card .amount{
+.card .amount{
     padding: 8px 0px;
-  }
+}
+
 .see-more{
    
 }
@@ -149,7 +162,7 @@ footer{
   background-color: #1e1938;
   text-align: center;
   align-items: center;
-  padding: 60px;
+  padding: 50px;
   gap: 20px;
 
 }
@@ -162,6 +175,82 @@ footer{
   padding-left: 10px;
   padding-top: 6px;
 }
+.footer-title{
+  font-size: 2rem;
+}
 footer p{
-  padding-top: 6px;
+  padding-top: 10px;
+}
+
+
+/* media query  */
+
+/* small device */
+@media screen and (max-width:576px) {
+  nav,nav > ul,
+   .sponsor-items,
+   .featured{
+    flex-direction: column;
+  }
+  nav{
+    align-items: center;
+    padding-top: 10px;
+  }
+  nav > ul li img{
+    display: flex;
+  } 
+
+  /* banner section starts */
+  .banner{
+    flex-direction: column-reverse;
+    margin: 10px 15px;
+  }
+  .banner-title{
+    font-size: 1.75rem;
+  }
+  .banner-content{
+    margin-top: 30px;
+    width: 80%;
+  }
+  
+  .banner-img img{
+    width: 70%;
+    margin: auto;
+  }
+
+  .banner-img{
+    width: 70%;
+    text-align: center;
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: contain;
+  }
+  /* sponsor section starts */
+
+  .sponsor-items{
+    padding: 15px 0px;
+  }
+  .sponsors{
+    margin: 30px;
+  }
+  /* collection section starts */
+  .collection{
+    padding: 10px  40px;
+  }
+  .collection-items{
+    grid-template-columns: repeat(1,1fr);
+    
+  }
+   /* featured section starts */
+  .featured-img img{
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .featured-container{
+    padding: 10px;
+    text-align: center;
+  }
+
 }
